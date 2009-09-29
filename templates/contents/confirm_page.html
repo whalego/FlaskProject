@@ -1,0 +1,15 @@
+{% extends "/base_html/base.html" %}
+{% block content %}
+
+<p>this page is {{title}}</p>
+<p>welcome to {{title}}</p>
+
+{% for key in result %}
+    key:{{ key }}
+    </br>
+
+{% endfor %}
+
+<a href="/">top</a>
+
+{% endblock %}

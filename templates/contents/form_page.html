@@ -1,0 +1,15 @@
+{% extends "/base_html/base.html" %}
+{% block content %}
+
+<p>this page is {{title}}</p>
+<p>welcome to {{title}}</p>
+<form action="/confirm_page" method="POST">
+    <p>user_name <input type="text" name="user_name"></p>
+    <p>image <input type="text" name="image"></p>
+    <p>category <input type="text" name="category"></p>
+    <p>content <input type="text" name="content"></p>
+    <p><input type="submit" value="submit"></p>
+</form>
+
+
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "base_html/base.html" %}
+{% block content %}
+
+<p>this page is index</p>
+
+{% for data in message %}
+
+    <p>{{ data[0] }} : {{ data[1] }} : {{ data[2] }}</p>
+
+{% endfor %}
+
+<p>{{ data }}</p>
+
+<a href={{ page }}>next page</a></br>
+
+<img src={{ image_url }}>
+
+{% endblock %}
+
+
