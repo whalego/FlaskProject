@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+{% for er in user %}
+    <ul>
+        <li>User name:{{ er }}</li>
+    </ul>
+{% endfor %}
+
+
+{% block content %}
+
+
+
+{% endblock %}
+
+</body>
+</html>

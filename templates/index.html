@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+
+<p>index</p>
+
+{% for data in message %}
+
+    <p>{{ data[0] }} : {{ data[1] }} : {{ data[2] }}</p>
+
+{% endfor %}
+
+
+
+<img src={{ image_url }}></img>
+
+{% endblock %}
