@@ -4,10 +4,16 @@
 import logging
 from logging import getLogger, StreamHandler, Formatter
 
+logger = None
 
 def init_logging(name):
+    global logger
 
-    logger = getLogger(name)
+    if logger is None:
+        logger = getLogger(name)
+    else:
+        return logger
+
     logger.setLevel(logging.DEBUG)
 
     handler = StreamHandler()
